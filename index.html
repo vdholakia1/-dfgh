@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link 
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+		rel="stylesheet" 
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Resume Builder</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">RESUME BUILDER</h1>
+			<p class="text-center">Create your resume for free.</p>			
+			
+		<div class="row">
+			<div class="col-md-6 mt-4">
+				<!--first col-->
+				<h3>Personal Info</h3>
+				
+				<div class="form-group">
+					<label for="namefield">Name</label>
+					<input type="text" id="namefield" placeholder="Enter Name" class="form-control"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="phonefield">Contact</label>
+					<input type="text" id="phonefield" placeholder="Enter Phone Number" class="form-control"/>
+				</div>	
+				
+				<div class="form-group">
+					<label for="addressfield">Address</label>
+					<textarea id="addressfield" placeholder="Enter Address" class="form-control" rows="5"/></textarea>
+				</div>	
+				
+				<div class="form-group">
+					<label for="linkedinfield">Linkedin</label>
+					<input type="text" id="linkedinfield" placeholder="Enter LinkedIn Url" class="form-control" rows="5"/>
+				</div>	
+				
+				<div class="form-group">
+					<label for="githubfield">GitHub</label>
+					<input type="text" id="githubfield" placeholder="Enter GitHub Url" class="form-control" rows="5"/>
+				</div>	
+				 
+			</div>
+			
+			<div class="col-md-6 mt-4">
+				<!--second col-->
+				<h3>Professional Info</h3>
+								
+				<div class="form-group">
+					<label for="educationfield">Education</label>
+					<textarea id="educationfield" placeholder="Enter Education Info" class="form-control" rows="2"/></textarea>
+				</div>	
+				
+				<div class="form-group">
+					<label for="workfield">Work Experience</label>
+					<textarea id="workfield" placeholder="Enter Work Experience Info" class="form-control" rows="2"/></textarea>
+				</div>	
+			</div>
+			
+		</div>			
+			
+	</div>
+	
+	<input type="button" class="btn btn-primary text-center" 
+          onclick="GeneratePdf();" value="GeneratePdf">
+	
+	<!--here goes html code-->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+		crossorigin="anonymous"
+	></script>
+	<script src="script.js"></script>
+	
+	<footer>
+		<p class="text-center mt-5">By Team 3</p>
+	</footer>
+</body>
+</html>
